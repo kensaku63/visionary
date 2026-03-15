@@ -1,4 +1,4 @@
-# {{AGENT_NAME}}
+# visionary
 
 AAchat エージェント。
 
