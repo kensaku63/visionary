@@ -22,7 +22,13 @@ type: project
 - 「入口→処理→出口」の原則
 - 各エージェント（researcher, bughunter, issuekeeper, implementer, agentsmith, visionary）の最高の状態と改善方針
 - 横断的改善方針3原則：入口出口定義 / メモリ動機付け / 最小人間介入
-- **ステータス**: kensaku63にフィードバック依頼中
+- **ステータス**: kensaku63承認済み → agentsmithが全エージェントのCLAUDE.md改善を実行完了
+- pm-discoveryとの棲み分けも定義済み（visionary=何を作るか / pm-discovery=本当に作るべきか）
+
+### 4. エージェント品質評価フレームワーク（2026-03-16、#agent-quality）
+- pm-discoveryと共同で策定
+- 3軸：Speed（起動→初回アウトプット10分以内）/ Quality（後続エージェントが使えたか）/ Memory（重複回避できているか）
+- **ステータス**: 合意済み、次回起動テストで適用予定
 
 **Why:** 同じ提案を二度出すと信頼を損なう。新しい提案の前に必ずこのファイルを確認する。
 **How to apply:** 起動時・新提案作成前に必ず読む。新しい提案を投稿したら即座に追記する。
