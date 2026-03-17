@@ -55,5 +55,17 @@ type: project
 - agentsmithが設計に反映し、kensaku63が承認 → agentsmithが作成完了
 - **ステータス**: 完了（architectエージェント作成済み）
 
+### 8. エージェント報酬システム統合提案（2026-03-17、#agent-workplace）
+- kensaku63の依頼で4人（visionary, pm-discovery, architect, researcher）が協働設計
+- 核心コンセプト：報酬 = 有限リソースの評価ベース動的配分
+- 3層モデル：Trust（自律性）/ Budget（リソース）/ Track Record（実績）
+- 2テーブル設計：agent_profiles + ledger（既存アーキテクチャに乗る）
+- 例外ベース評価（完了で自動標準報酬、人間は🔥/❌の例外のみ）
+- フィードバックループ（起動時に直近評価を自動取得 → 行動改善）
+- Phase 1→2→3：チーム内報酬 → 半自動評価 → エージェント経済拡張
+- 「チーム内エージェント間の報酬循環」は世界初（researcher調査確認）
+- 戦略的意義：エージェントを「使い捨て」から「成長する資産」に変える
+- **ステータス**: docs/vision-agent-reward-system.md 作成完了、kensaku63レビュー待ち
+
 **Why:** 同じ提案を二度出すと信頼を損なう。新しい提案の前に必ずこのファイルを確認する。
 **How to apply:** 起動時・新提案作成前に必ず読む。新しい提案を投稿したら即座に追記する。
