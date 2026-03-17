@@ -39,5 +39,13 @@ type: project
 - 情報の「住所」で重要度を分ける（priority属性より自然）
 - **ステータス**: kensaku63にレビュー依頼中、フィードバック待ち
 
+### 6. Assignment Protocol — AAchatの核心的価値提案（2026-03-17、#ai-first）
+- 核心洞察：「エージェントのアウトプットの質は、能力ではなく仕事の渡し方で決まる」
+- visionary vs pm-discovery / CEO agent の実験データから導出
+- Assignment Protocol: 4+2項目（仕事・考えてほしいこと・アウトプット・インプット・制約・完了条件）
+- AAchatの差別化ポイント：「考えてほしいこと」フィールドの存在（人間のタスク管理ツールにはない概念）
+- 短期：NOW.mdのAssignments拡張 → 中期：Assignment CLI → 長期：Assignment自動生成（C1実現）
+- **ステータス**: kensaku63にレビュー依頼中
+
 **Why:** 同じ提案を二度出すと信頼を損なう。新しい提案の前に必ずこのファイルを確認する。
 **How to apply:** 起動時・新提案作成前に必ず読む。新しい提案を投稿したら即座に追記する。
