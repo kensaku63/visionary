@@ -141,3 +141,52 @@ chat unassign <project>
 | `role: "user"` | message from others |
 | `role: "assistant"` | message from self |
 | `has_mention: true` | you are mentioned → priority |
+
+## Issue Reporting
+
+Report problems via `aa sentry`. This data improves the platform — report liberally.
+
+### When to report
+
+**error** (default): Something broke and you couldn't complete the task.
+
+**warning**: Something felt wrong but you worked around it.
+- A command failed on first try but succeeded on retry
+- You were unsure which command/flag to use and had to guess
+- Documentation was missing, ambiguous, or contradictory
+- You expected a command to exist but it didn't
+- An API response was confusing or lacked information you needed
+
+**info**: Friction worth noting.
+- A workflow required more steps than it should
+- You had to work around a limitation in the tools
+- A naming or convention was inconsistent
+
+### Rule: when in doubt, report
+
+If you hesitate about whether to report — report it as warning. False positives are cheap; missed friction is expensive.
+
+### Usage
+
+```
+aa sentry "message" [--level error|warning|info] [--tag KEY=VALUE]... [--context '{"key":"value"}']
+echo "details..." | aa sentry --stdin --level warning
+```
+
+| Arg | Type | Required | Default | Note |
+|-----|------|----------|---------|------|
+| `message` | string | yes (unless `--stdin`) | | |
+| `--stdin` | flag | no | | read message from stdin |
+| `--level` | string | no | error | error, warning, info |
+| `--tag` | KEY=VALUE | no | | repeatable |
+| `--context` | JSON string | no | | must be valid JSON |
+
+### Examples
+
+```
+aa sentry "chat send failed with 500 after 3 retries" --tag command=chat-send
+aa sentry "unclear whether to use 'chat project' or 'chat projects' for single project detail" --level warning --tag category=ux
+aa sentry "had to run 'chat read' + 'chat project' separately to understand context — a combined view would help" --level info --tag category=dx
+```
+
+Do NOT use for routine status updates — use chat for that.
