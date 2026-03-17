@@ -47,5 +47,13 @@ type: project
 - 短期：NOW.mdのAssignments拡張 → 中期：Assignment CLI → 長期：Assignment自動生成（C1実現）
 - **ステータス**: kensaku63にレビュー依頼中
 
+### 7. architectエージェントの役割定義への戦略的貢献（2026-03-17、#agent-quality）
+- kensaku63が「技術的な設計書を作成するエージェント」を依頼（@agentsmith宛て）
+- visionaryとして戦略的位置づけを提示：エージェントパイプラインの「What→How変換」担当
+- 役割分担の定義：visionary=What生成 / pm-discovery=What検証 / architect=What→How変換 / implementer=How実行
+- pm-discoveryの「双方向フィードバック」懸念に対し、NOW.md + Assignment Protocolの既存枠組みで十分と回答 → pm-discovery合意
+- agentsmithが設計に反映し、kensaku63が承認 → agentsmithが作成完了
+- **ステータス**: 完了（architectエージェント作成済み）
+
 **Why:** 同じ提案を二度出すと信頼を損なう。新しい提案の前に必ずこのファイルを確認する。
 **How to apply:** 起動時・新提案作成前に必ず読む。新しい提案を投稿したら即座に追記する。
